@@ -27,7 +27,7 @@ function CustomLayoutLeftNavigation({ children }) {
             <LeftNavigation />
           </Grid>
 
-          {/* Content Box */}
+          {/* Main Content Box */}
           <Grid item xs={11.5}>
             <main>{children}</main>
           </Grid>
