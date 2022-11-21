@@ -7,7 +7,22 @@ body {
   /* seccondary */
   /* font-family: 'DM Sans', sans-serif; */
 }
-
+.css-i4bv87-MuiSvgIcon-root{
+  height: 50px !important;
+  width: 30px !important;
+  margin-right: 5px !important;
+}
 * {
   box-sizing: border-box;
+}
+div.chrome-picker{
+  border-radius: 0px !important;
+  box-shadow: none !important;
+  background-color: #D8D8D8 !important;
+}
+div.chrome-picker>:nth-child(1){
+  height: 600px !important;
+}
+.chrome-picker>:nth-child(2){
+  padding-top: 40px !important;
 }

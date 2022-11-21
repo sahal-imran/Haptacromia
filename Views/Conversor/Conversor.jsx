@@ -1,15 +1,52 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
 import { Box } from "@mui/material";
+import Header from "../../components/Conversor/Header";
+import Contrast from "../../components/Conversor/Contrast/Contrast";
+import Formulas from "../../components/Conversor/Formulas/Formulas";
+import CustomeColorPicker from "../../components/Conversor/Formulas/ColorPicker";
+import MiddleMain from "../../components/Conversor/Middle/MiddleMain";
 
 function Conversor() {
   return (
     <>
-      <Box sx={{ flexGrow: 1, width: "100%" }}>
-        <Grid container spacing={0}>
-          <Grid item sx={{background:"red",minHeight:"100vh"}} xs={5}></Grid>
-          <Grid item sx={{background:"green",minHeight:"100vh"}} xs={4}></Grid>
-          <Grid item sx={{background:"blue",minHeight:"100vh"}} xs={3}></Grid>
+      <Box
+        sx={{
+          flexGrow: 1,
+          width: "100%",
+          background: "#D8D8D8",
+        }}
+      >
+        {/* Conversor Header */}
+        
+        <Header />
+
+        <Grid container spacing={{xs:1, xmd:2}}>
+          {/* first column */}
+          <Grid
+            item
+            sx={{
+              minHeight: "100vh",
+            }}
+            xs={3.8}
+          >
+            <Formulas />
+            <CustomeColorPicker/>
+          </Grid>
+
+          {/* secound column */}
+          <Grid
+            item
+            sx={{ minHeight: "100vh"}}
+            xs={5.5}
+          >
+            <MiddleMain/>
+          </Grid>
+
+          {/* third column */}
+          <Grid item sx={{ minHeight: "100vh" }} xs={2.5}>
+            <Contrast />
+          </Grid>
         </Grid>
       </Box>
     </>
