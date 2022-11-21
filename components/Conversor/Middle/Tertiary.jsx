@@ -12,6 +12,7 @@ const Tertiary = () => {
         width: "100%",
         borderRadius: "8px",
         boxShadow: " 0px 2px 5px 3px rgba(0,0,0,0.15)",
+        background:"#FFFFFF",
         py: 2,
         px: { xs: 2, lg: 4 },
       }}

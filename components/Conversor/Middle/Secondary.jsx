@@ -15,6 +15,7 @@ const MiddleFourColors = () => {
         boxShadow: " 0px 2px 5px 3px rgba(0,0,0,0.15)",
         py: 2,
         px: { xs: 2, lg: 4 },
+        background:"#FFFFFF"
       }}
     >
       {/* Top text label */}

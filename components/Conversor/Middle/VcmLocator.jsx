@@ -15,6 +15,7 @@ const VcmLocator = () => {
         py: 2,
         px: { xs: 2.5, lg: 6 },
         // px: { xs: 2, lg: 6 },
+        background:"#FFFFFF"
       }}
     >
       {/* Top text label */}

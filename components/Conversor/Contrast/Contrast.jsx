@@ -269,8 +269,6 @@ function Contrast() {
       {/* secound section */}
       <Box
         sx={{
-          maxWidth: "249px",
-          minHeight: "249px",
           width: "100%",
           background: "#FFFFFF",
           mt: "30px",
@@ -304,7 +302,6 @@ function Contrast() {
       {/* third section */}
       <Box
         sx={{
-          maxWidth: "249px",
           width: "100%",
           display: "flex",
           p: "20px",
@@ -314,9 +311,9 @@ function Contrast() {
       >
         {/* left part */}
         <Box sx={{ display: "flex", width: "60%", flexDirection: "column",justifyContent:"center", alignItems:"center" }}>
-          {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14].map(() => {
+          {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14].map((index) => {
             return (
-              <Box sx={{ width: "100%" }}>
+              <Box key={index} sx={{ width: "100%" }}>
                 <Box
                   sx={{
                     fontSize: "30px",
@@ -339,9 +336,10 @@ function Contrast() {
           {[
             0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18,
             19, 20, 21,
-          ].map(() => {
+          ].map((index) => {
             return (
               <Box
+              key={index}
                 sx={{
                   width: "100%",
                   display: "flex",
@@ -355,6 +353,7 @@ function Contrast() {
                   {[0, 1, 2, 3].map((item, index) => {
                     return (
                       <Box
+                      key={index}
                         sx={{
                           width: "9.15px",
                           height: "9.15px",

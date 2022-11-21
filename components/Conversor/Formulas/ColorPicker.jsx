@@ -18,7 +18,7 @@ function CustomeColorPicker() {
 
   return (
     <Box sx={{ display: "flex", flexDirection: "column", mt: "60px" }}>
-      <Box sx={{ p: "0px 18px", display: "flex" }}>
+      <Box sx={{ p: "0px 18px", display: "flex",justifyContent:"center",alignItem:"center",width:"100%" }}>
         <ChromePicker
           disableAlpha={true}
           color={oneColor}

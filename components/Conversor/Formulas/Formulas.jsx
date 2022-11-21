@@ -9,12 +9,14 @@ function Formulas() {
         sx={{
           width: "100%",
           display: "flex",
+          justifyContent:"center",
+          alignItems:"center",
           background: "white",
           p: "12px 18px",
         }}
       >
         {/* ----------left part---------- */}
-        <Box sx={{ width: "50%", mr: "12px" }}>
+        <Box sx={{ width: "50%" }}>
           <Typography
             sx={{
               fontSize: {xs:"14px", xmd:"20px"},
@@ -28,7 +30,6 @@ function Formulas() {
           <Box
             sx={{
               display: "flex",
-              justifyContent: "space-between",
               mt: "20px",
             }}
           >
@@ -38,13 +39,16 @@ function Formulas() {
                 display: "flex",
                 width: "50%",
                 flexDirection: "column",
-                mt: "40px",
+                justifyContent:"center",
+                alignItems:"center",
+                // mt: "40px",
               }}
             >
-              {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map(() => {
+              {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((index) => {
                 return (
                   <Box
-                    sx={{ display: "flex", alignItems: "center", mb: "15px" }}
+                  key={index}
+                    sx={{ display: "flex", alignItems: "center", mb: "22px" }}
                   >
                     <Box sx={{ paddingLeft: {xs:"1px", xmd:"3px"},mr:{xs:"0px",   xmd:"18px"}}}>
                       <Typography sx={{ fontSize: "7px", fontWeight: "500" }}>
@@ -57,9 +61,10 @@ function Formulas() {
 
                     <Box>
                       <Box sx={{ display: "flex" }}>
-                        {[0, 1, 2, 3].map(() => {
+                        {[0, 1, 2, 3].map((index) => {
                           return (
                             <Box
+                            key={index}
                               sx={{
                                 width: "6.34px",
                                 height: "6.65px",
@@ -98,9 +103,10 @@ function Formulas() {
                   clipPath: "polygon(48% 0, 0 40%, 100% 40%)",
                 }}
               ></Box>
-              {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map(() => {
+              {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((index) => {
                 return (
                   <Box
+                  key={index}
                     sx={{
                       width: {xs:"60px", xmd:"96px"},
                       height: "40px",
@@ -155,9 +161,10 @@ function Formulas() {
                   clipPath: "polygon(48% 0, 0 40%, 100% 40%)",
                 }}
               ></Box>
-              {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map(() => {
+              {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((index) => {
                 return (
                   <Box
+                  key={index}
                     sx={{
                       width: {xs:"60px", xmd:"96px"},
                       height: "40px",
@@ -180,9 +187,10 @@ function Formulas() {
 
             {/* nested right --- right div  */}
             <Box sx={{ display: "flex",justifyContent:"center",alignItems:"center", flexDirection: "column" }}>
-              {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map(() => {
+              {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((index) => {
                 return (
                   <Box
+                  key={index}
                     sx={{
                       display: "flex",
                       justifyContent:"center",
@@ -199,9 +207,10 @@ function Formulas() {
                       VCM Heptacromia N
                     </Typography>
                     <Box sx={{ display: "flex" }}>
-                      {[0, 1, 2, 3, 4, 5, 6].map(() => {
+                      {[0, 1, 2, 3, 4, 5, 6].map((index) => {
                         return (
                           <Box
+                          key={index}
                             sx={{
                               width: "6.34px",
                               height: "6.65px",
